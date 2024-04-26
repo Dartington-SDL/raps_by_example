@@ -1,0 +1,13 @@
+"Opportunity.Owner","Opportunity.Name","Type","Amount","Close.Date","Stage","Probability....","Owner.Role","Created.Date","Product.Name","Quantity","Sales.Price","Total.Price","Product.Date","Product..Month","Product.Description","List.Price","Product.Code","Active.Product","Account.Name","project_length"
+"Sean Manzi","Acme - 1250 Widgets","Existing Business",45000,2024-04-26,"Qualification",10,NA,2024-04-23,NA,NA,NA,45000,"26/04/2024","01/04/2024",NA,NA,NA,0,"Acme",3
+"Sean Manzi","Global Media - 180 Widgets","Existing Business",19500,2024-04-27,"Negotiation",90,NA,2024-04-23,NA,NA,NA,19500,"27/04/2024","01/04/2024",NA,NA,NA,0,"Global Media",4
+"Sean Manzi","Global Media - 1750 Widgets","Existing Business",52500,2024-04-30,"Qualification",10,NA,2024-04-23,NA,NA,NA,52500,"30/04/2024","01/04/2024",NA,NA,NA,0,"Global Media",7
+"Sean Manzi","salesforce.com - 200 Widgets","Existing Business",20000,2024-05-04,"Needs Analysis",35,NA,2024-04-23,NA,NA,NA,20000,"04/05/2024","01/05/2024",NA,NA,NA,0,"salesforce.com",11
+"Sean Manzi","salesforce.com - 210 Widgets","Existing Business",20000,2024-05-05,"Negotiation",90,NA,2024-04-23,NA,NA,NA,20000,"05/05/2024","01/05/2024",NA,NA,NA,0,"salesforce.com",12
+"Sean Manzi","Acme - 150 Widgets","Existing Business",20000,2024-05-10,"Qualification",10,NA,2024-04-23,NA,NA,NA,20000,"10/05/2024","01/05/2024",NA,NA,NA,0,"Acme",17
+"Sean Manzi","Global Media - 400 Widgets","New Business",40000,2024-05-11,"Qualification",10,NA,2024-04-23,NA,NA,NA,40000,"11/05/2024","01/05/2024",NA,NA,NA,0,"Global Media",18
+"Sean Manzi","salesforce.com - 320 Widgets","Existing Business",34000,2024-05-12,"Needs Analysis",35,NA,2024-04-23,NA,NA,NA,34000,"12/05/2024","01/05/2024",NA,NA,NA,0,"salesforce.com",19
+"Sean Manzi","Acme - 1,200 Widgets","Existing Business",110000,2024-05-18,"Needs Analysis",35,NA,2024-04-23,NA,NA,NA,110000,"18/05/2024","01/05/2024",NA,NA,NA,0,"Acme",25
+"Sean Manzi","Acme - 200 Widgets","Existing Business",20000,2024-06-09,"Qualification",10,NA,2024-04-23,NA,NA,NA,20000,"09/06/2024","01/06/2024",NA,NA,NA,0,"Acme",47
+"Sean Manzi","salesforce.com - 240 Widgets","Existing Business",22500,2024-06-14,"Negotiation",90,NA,2024-04-23,NA,NA,NA,22500,"14/06/2024","01/06/2024",NA,NA,NA,0,"salesforce.com",52
+"Sean Manzi","Acme - 140 Widgets","Existing Business",22500,2024-06-29,"Negotiation",90,NA,2024-04-23,NA,NA,NA,22500,"29/06/2024","01/06/2024",NA,NA,NA,0,"Acme",67

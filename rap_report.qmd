@@ -1,0 +1,75 @@
+---
+title: "Reproducible Analytical Pipelines - Example report"
+format: html
+editor: visual
+---
+
+```{r}
+#| echo: false
+
+# Set the working directory location
+setwd('~/OneDrive - Warren House Group/DSDL/Projects/Think Forward/capacity_development/raps_and_tools/')
+
+# Read in the raw data in CSV format
+data <- read.csv('data/report1_transform.csv')
+
+data$Amount <- as.numeric(data$Amount)
+data$Total.Price <- as.numeric(data$Total.Price)
+options(scipen = 5)
+tot_amount <- sum(data$Amount)
+tot_price <- sum(data$Total.Price)
+
+```
+
+## Test report
+
+### In-text numbers
+
+Out total amount of product produced is `r tot_amount` units at a price of £`r tot_price`.
+
+### Adding a table
+
+```{r}
+#| echo: false
+#| label: tbl-negot
+#| tbl-cap: "Negotiation details"
+
+library(knitr)
+negot_sub <- data[data$Stage == "Negotiation", ]
+negot_tab <- negot_sub[c("Account.Name", "project_length", "Amount", "Total.Price")]
+
+kable(negot_tab, col.names = c("Customer", "Project length (days)", "Quantity", "Price (GBP)"), row.names = FALSE)
+```
+
+The information on our current contracts at the negotiation stage are shown in @tbl-negot.
+
+### Adding a plot
+
+```{r}
+#| echo: false
+#| label: fig-bar
+#| fig-cap: "Bar chart of the number of projects by customer"
+
+acc_count <- table(data$Account.Name)
+max_count <- which.max(acc_count)
+cust_plt <- barplot(acc_count)
+```
+
+The number of projects for each customer are shown in @fig-bar. The customer with the greatest number of projects is `r names(max_count)`. We currently have `r acc_count[[max_count]]` projects with them.
+
+```{r}
+#| echo: false
+#| label: fig-scatter
+#| fig-cap: "A scatter plot comparing the length of a project and the price of the project"
+
+price_amount_plt <- plot(data$project_length, data$Total.Price,
+                         xlab = "Project length (days)",
+                         ylab = "Total price (GBP)")
+
+avg_len <- mean(data$project_length)
+std_len <- round(sd(data$project_length), 2)
+```
+
+The relationship between the length of a project and the price of the project is given in @fig-scatter. The average project length is `r avg_len` (standard deviation = `r std_len`) and the average project price is `r mean(data$Total.Price)` (standard deviation = `r round(sd(data$project_length),2)`).
+
+
